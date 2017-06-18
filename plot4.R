@@ -6,7 +6,7 @@ data <- read.table(dataFile, header=TRUE, sep=";", stringsAsFactors=FALSE, dec="
 ##subsetting data for only two days
 sub <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
-#plot 3
+#plot 4
 #getting dates and formating the values
 datetime <- strptime(paste(subSetData$Date, subSetData$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 #getting values from variable Global_active_power and converting chars to numeric value
